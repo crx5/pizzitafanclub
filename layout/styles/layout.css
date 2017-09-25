@@ -56,7 +56,7 @@ File: Layout CSS
 
 /* Content Area
 --------------------------------------------------------------------------------------------------------------- */
-.container{padding:80px 0;}
+
 
 /* Content */
 .container .content{}
@@ -217,7 +217,7 @@ td{border-width:0 1px;}
 .faico li:last-child{margin-right:0;}
 .faico a{display:inline-block; width:36px; height:36px; line-height:36px; font-size:18px; text-align:center;}
 
-.faico a{color:#050505; background-color:#A3D044;}
+.faico a{color:#050505; background-color:#0d47a1;}
 .faico a:hover{color:#FFFFFF;}
 
 .faicon-dribble:hover{background-color:#EA4C89;}
@@ -252,7 +252,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#A3D044;}
 
 /* Rows */
 .row0, .row0 a{color:#7F7F7F; background-color:#141414;}
-.row0{border-color:#A3D044;}
+.row0{border-color: #0d47a1;}
 .row1{color:#FFFFFF; background-color:#252525;}
 .row2{color:#141414; background-color:#F3F3F3;}
 .row3{color:#141414; background-color:#FFFFFF;}
@@ -262,7 +262,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#A3D044;}
 
 /* Top Bar */
 #topbar ul li{border-color:rgba(255,255,255,.2);}
-#topbar div:first-of-type li:first-child a{color:#A3D044;}
+#topbar div:first-of-type li:first-child a{color:#0d47a1;}
 
 
 /* Header */
