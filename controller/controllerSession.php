@@ -16,9 +16,16 @@ $crud = new CrudUser();
 // se da que esta definida cuando el usuario se loguea, ya que le envia la peticion
 
 if(isset($_POST['registrarse'])){
-  $user->setNombre($_POST['user']);
+  $user->setCorreo($_POST['correo']);
+//  if(strcmp($_POST['password'],$_POST['confirm'])==0){
+
   $user->setPassword($_POST['password']);
-    if($crud->buscarUser($_POST['user'])){
+//}else {
+
+//}
+
+  $user->setTelefono($_POST['telefono']);
+    if($crud->buscarUser($_POST['correo'])){
       $crud->insertar($user);
       header('Location: ../index.php');
     }else {

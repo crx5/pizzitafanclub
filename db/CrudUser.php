@@ -62,7 +62,7 @@ require_once('../classes/User.php');
     public function buscarUser($correo){
       $db = Db::conectar();
       $select = $db->prepare('SELECT * FROM usuario WHERE correo=:correo');
-      $select->bindValue('corrreo',$correo);
+      $select->bindValue('correo',$correo);
       $select->execute();
       $registro=$select->fetch();
       if($registro['id']!=NULL){
