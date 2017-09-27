@@ -4,10 +4,20 @@
      private $correo;
      private $telefono;
      private $password;
+     private $id;
 
     function __construct(){}
      public function getCorreo(){
        return $this->correo;
+       }
+
+       public function getId(){
+
+         return $this->id;
+       }
+
+       public function setId($id){
+         $this->id = $id;
        }
 
       public function getTelefono(){

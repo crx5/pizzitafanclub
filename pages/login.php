@@ -1,9 +1,9 @@
 
 
-<!-- Form Mixin-->
-<!-- Input Mixin-->
-<!-- Button Mixin-->
-<!-- Pen Title-->
+<?php
+	session_start();
+	unset($_SESSION['user']);
+?>
 <div class="pen-title">
   <h1>Iniciar Sesion</h1>
 </div>
@@ -14,10 +14,10 @@
   </div>
   <div class="form">
 
-    <form>
-      <input type="text" placeholder="Usuario"/>
-      <input type="password" placeholder="Contraseña"/>
-      <button>Login</button>
+    <form action="controller/controllerSession.php" method="post">
+      <input type="text" placeholder="Usuario" name="user"/>
+      <input type="password" placeholder="Contraseña" name="password"/>
+      <button name="entrar">Login</button>
     </form>
   </div>
 

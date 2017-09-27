@@ -35,18 +35,24 @@ require_once('../classes/User.php');
 
     //validar datos Login
     public function obtenerUser($correo,$password){
+
       $db = Db::conectar();
-      $select=$db->prepare('SELECT * FROM usuario WHERE correo=:correo');
+      $select=$db->prepare("SELECT * FROM usuario WHERE correo=:correo");
       $select->bindValue('correo',$correo);
       $select->execute();
+
       $registro = $select->fetch();
+    //  var_dump($registro);
       $user = new User();
       //verifica si clave es correcta
-      if(password_verify($password, $registro['password'])){
+
+      if(strcmp($password, $registro['password'])==0){
         //si es correcta asigna valores que trae de la bd
+
         $user->setCorreo($registro['correo']);
         $user->setPassword($registro['password']);
         $user->setTelefono($registro['telefono']);
+        $user->setId($registro['id']);
 
       }
       return $user;
