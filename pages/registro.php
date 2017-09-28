@@ -1,6 +1,6 @@
 
-
-
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="scripts/parsley.js"></script>
 		<div class="container">
 			<div class="row main">
 				<div class="panel-heading">
@@ -10,7 +10,7 @@
 	               	</div>
 	            </div>
 				<div class="main-login main-center">
-					<form class="form-horizontal" action="controller/controllerSession.php" method="post">
+					<form class="form-horizontal" action="controller/controllerSession.php" method="post" data-parsley-validate>
 
 					<!--	<div class="form-group">
 							<label for="name" class="cols-sm-2 control-label">Nombre</label>
@@ -47,7 +47,7 @@
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-									<input type="password" class="form-control" name="password_confirmation" id="password"  placeholder="digite su contraseña"/>
+									<input type="password" class="form-control" name="password" id="password"  placeholder="Digite su contraseña"/>
 								</div>
 							</div>
 						</div>
@@ -55,10 +55,15 @@
 						<div class="form-group">
 							<label for="confirm" class="cols-sm-2 control-label">Confirme su contraseña</label>
 							<div class="cols-sm-10">
-
 								<div class="input-group">
-                  <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-									<input type="password" class="form-control"  data-validation="confirmation" name="password" id="confirm"  placeholder="Confirm your Password"/>
+
+									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+
+									<input type="password" data-parsley-errors-container="#error"  data-parsley-equalto="#password"  class="form-control" name="password" id="confirm"  placeholder="Confirme su contraseña"  />
+
+								</div>
+								<div id="contenedor-error">
+										<p id="error"></>
 								</div>
 							</div>
 						</div>
@@ -73,12 +78,3 @@
 				</div>
 			</div>
 		</div>
-
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
-    <script>
-    $.validate({
-      modules : 'security'
-    });
-    </script>
