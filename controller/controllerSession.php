@@ -29,7 +29,7 @@ if(isset($_POST['registrarse'])){
       $crud->insertar($user);
       header('Location: ../index.php');
     }else {
-      header('Location: error.php?mensaje=el nombre de usuario ya existe');
+      header('Location: ../pages/error.php?mensaje=Su correo ya esta registrado');
     }
 
 }else if (isset($_POST['entrar'])){//verifica si la variable entrar esta definidad

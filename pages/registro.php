@@ -5,7 +5,7 @@
 			<div class="row main">
 				<div class="panel-heading">
 	               <div class="panel-title text-center">
-	               		<h1 class="title">REGISTRO</h1>
+	               		<!--<h1 class="title">REGISTRO</h1>-->
 	               		<hr />
 	               	</div>
 	            </div>
@@ -27,7 +27,10 @@
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-									<input type="email" class="form-control" name="correo" id="email"  placeholder="ejemplo@gmail.com"/>
+									<input type="email" data-parsley-error-message="Ingrese un e-mail valido" data-parsley-errors-container="#error-mail" data-parsley-type="email" class="form-control" name="correo" id="email"  placeholder="ejemplo@gmail.com"/>
+								</div>
+								<div id="cont-error-mail">
+										<p id="error-mail"></>
 								</div>
 							</div>
 						</div>
@@ -37,7 +40,10 @@
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-phone" aria-hidden="true"></i></span>
-									<input type="tel" class="form-control" name="telefono" id="telefono"  placeholder="Digite su telefono"/>
+									<input data-parsley-error-message="Ingrese un numero de telefono valido" data-parsley-type="number" data-parsley-errors-container="#error-tel"  type="tel" class="form-control" name="telefono" id="telefono"  placeholder="Digite su telefono"/>
+								</div>
+								<div id="cont-error-tel">
+										<p id="error-tel"></>
 								</div>
 							</div>
 						</div>
@@ -59,7 +65,7 @@
 
 									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
 
-									<input type="password" data-parsley-errors-container="#error"  data-parsley-equalto="#password"  class="form-control" name="password" id="confirm"  placeholder="Confirme su contraseña"  />
+									<input type="password" data-parsley-error-message="Las contraseñas no coinciden" data-parsley-errors-container="#error"  data-parsley-equalto="#password"  class="form-control" name="password" id="confirm"  placeholder="Confirme su contraseña"  />
 
 								</div>
 								<div id="contenedor-error">

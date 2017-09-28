@@ -1,8 +1,18 @@
 
 
 <?php
+
+if (!isset($_SESSION['user'])) {
 	session_start();
 	unset($_SESSION['user']);
+}else {
+
+	header('Location: ../index.php');
+}
+
+
+
+
 ?>
 <div class="pen-title">
   <h1>Iniciar Sesion</h1>
