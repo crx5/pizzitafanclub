@@ -38,29 +38,19 @@ if(isset($_POST['registrarse'])){
   // si el id no es nulo entonces encontro algo
     if($user->getId()!=null){
         $_SESSION['user']=$user;
-        header('Location: ../pages/cuenta.php');
+        
+       header('Location: ../index.php?menu=cuenta');
+        //require_once('pages/cuenta.php');
+
+
     }else{
 
     //  header('Location: ../pages/error.php?mensaje=nombre de usuario o contraseña incorrecta');
     }
   }else if(isset($_POST['salir'])){
-    //logout
-    header('Location: ../index.php');
     unset($_SESSION['user']);// destruir session
+    header('Location: ../index.php');
+
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- ?>
+?>

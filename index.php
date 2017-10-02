@@ -25,6 +25,40 @@
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
 <script  src="scripts/login.js"></script>
+<script src="layout/scripts/jquery.min.js"></script>
+<script type="text/javascript">
+
+function hideLinks(){
+  $("#lLogin").hide();
+  $("#lRegistro").hide();
+
+}
+
+function showLinks (){
+  $("#lLogin").show();
+  $("#lRegistro").show();
+}
+
+$(function (){
+    hideLinks();
+    showLinks();
+});
+
+
+</script>
+
+<?php
+session_start();
+if($_SESSION['user']){
+echo "<script type='text/javascript'> hideLinks();</script>";
+} else {
+
+  echo "<script type='text/javascript'> showLinks();</script>";
+}
+?>
+
+
+
 
 
 <?php

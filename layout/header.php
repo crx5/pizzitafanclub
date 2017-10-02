@@ -3,11 +3,11 @@
   <div id="topbar" class="hoc clear">
     <!-- ################################################################################################ -->
     <div class="fl_left">
-      <ul class="nospace">
+      <ul class="nospace" id="links">
         <li><a href="#"><i class="fa fa-lg fa-home"></i></a></li>
         <li><a href="#">Contact</a></li>
-        <li><a href="?menu=login">Login</a></li>
-        <li><a href="?menu=registro">Register</a></li>
+        <li id="lLogin"><a href="?menu=login">Login</a></li>
+        <li id="lRegistro"><a href="?menu=registro">Register</a></li>
       </ul>
     </div>
     <div class="fl_right">

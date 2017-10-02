@@ -5,7 +5,9 @@ if ($_GET['menu']=='login') {
 		require_once('pages/login.php');
 	} else if ($_GET['menu']=='registro') {
 		require_once('pages/registro.php');
-	} else {
+	} elseif ($_GET['menu']=='cuenta') {
+		require_once('pages/cuenta.php');
+	}else {
 
 		require_once('main.php');
 	}
