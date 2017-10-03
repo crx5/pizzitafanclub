@@ -1,3 +1,15 @@
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="scripts/hLinks.js"></script>
+<?php
+session_start();
+if($_SESSION['user']){
+echo "<script type='text/javascript'> hideLinks();</script>";
+echo "hay sesion iniciada";
+} else  {
+
+//  echo "<script type='text/javascript'> showLinks();</script>";
+}
+?>
 <?php
 error_reporting(E_ALL ^ E_NOTICE);
 if ($_GET['menu']=='login') {

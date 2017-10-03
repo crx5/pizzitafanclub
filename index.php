@@ -20,14 +20,8 @@
 <script  src="scripts/login.js"></script>
 <?php
 ob_start();
-session_start();
-if($_SESSION['user']){
-echo "<script type='text/javascript'> hideLinks();</script>";
-} else {
-
-  echo "<script type='text/javascript'> showLinks();</script>";
-}
 ?>
+
 <?php
 require_once('layout/layout.php');
 ob_end_flush();
