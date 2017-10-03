@@ -20,25 +20,23 @@
 </head>
 <body id="top">
 <header>
-	<?php
-		require_once('header.php');
-	?>
+<?php
+require_once('header.php');
+?>
 </header>
 
 <section>
 	<div class="container">
-	<?php
+<?php
 			// carga el archivo routing.php para direccionar a la página .php que se incrustará entre la header y el footer
-			require_once('routing.php');
-	 ?>
-
-	</div>
+require_once('routing.php');
+?>
+</div>
 </section>
-
 <footer>
-	<?php
+<?php
 		include_once('footer.php');
-	?>
+?>
 </footer>
 </body>
 </html>

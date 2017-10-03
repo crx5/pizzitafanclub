@@ -1,11 +1,10 @@
 <?php
+
 session_start();
 if(isset($_SESSION['user'])){
 header('Location: index.php?menu=cuenta');
-
-
 }
- ?>
+?>
 <div class="pen-title">
   <h1>Iniciar Sesion</h1>
 </div>
