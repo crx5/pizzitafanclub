@@ -17,15 +17,12 @@
     </div>
   </div>
     <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
-      <span class="carousel-contro-prev-icon" aria-hidden="true"></span>
+      <span class="carousel-control-prev-icon" ></span>
       <span class="sr-only">Anterior</span>
     </a>
     <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
-      <span class="carousel-contro-next-icon" aria-hidden="true"></span>
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Siguiente</span>
     </a>
 
   </div>
-
-
-  

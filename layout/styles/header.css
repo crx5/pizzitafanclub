@@ -9,4 +9,21 @@ border-left: none;
 border-color: #0d47a1;
 padding-top: 5px;
 
+
+}
+
+
+
+@media (max-width: 414px){
+  #navbarNav{
+    display: ;
+  }
+
+}
+
+@media (min-width: 768px){
+  #navbarNav{
+    display: ;
+  }
+
 }
