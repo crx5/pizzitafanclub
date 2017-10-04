@@ -6,9 +6,10 @@ header('Location: index.php?menu=cuenta');
  ?>
 <script src="layout/scripts/jquery.min.js"></script>
 <script src="scripts/parsley.js"></script>
-		<div class="container">
+
+    <div class="container">
 			<div class="row main">
-				<div class="panel-heading">
+				<div >
 	               <div class="panel-title text-center">
 	               		<!--<h1 class="title">REGISTRO</h1>-->
 	               		<hr />

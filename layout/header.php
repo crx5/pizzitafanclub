@@ -1,43 +1,23 @@
 
-<div class="wrapper row0">
-  <div id="topbar" class="hoc clear">
-    <!-- ################################################################################################ -->
-    <div class="fl_left">
-      <ul class="nospace" id="links">
-        <li><a href="#"><i class="fa fa-lg fa-home"></i></a></li>
-        <li><a href="#">Contact</a></li>
-        <li id="lLogin"><a href="?menu=login">Login</a></li>
-        <li id="lRegistro"><a href="?menu=registro">Register</a></li>
-      </ul>
-    </div>
-    <div class="fl_right">
-      <ul class="nospace">
-        <li><i class="fa fa-phone"></i> +00 (123) 456 7890</li>
-        <li><i class="fa fa-envelope-o"></i> info@domain.com</li>
-      </ul>
-    </div>
-    <!-- ################################################################################################ -->
-  </div>
-</div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<div class="wrapper row1">
-  <header id="header" class="hoc clear">
-    <!-- ################################################################################################ -->
-    <div id="logo" class="fl_left">
-      <h1><a href="index.php">Nodelle</a></h1>
-      <p>Congue pulvinar velit</p>
-    </div>
-    <!-- ################################################################################################ -->
-    <nav id="mainav" class="fl_right">
-      <ul class="clear">
-        <li class="active"><a href="index.php">Home</a></li>
 
-        <li><a href="#">Link Text</a></li>
-        <li><a href="#">Link Text</a></li>
-      </ul>
-    </nav>
-    <!-- ################################################################################################ -->
-  </header>
-</div>
+
+  <nav  id="mainNavbar" class="navbar fixed-top navbar-expand-sm navbar-dark" style="background-color: ">
+        <a class="navbar-brand" href="index.php">PizzitaFanClub</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav" id="links">
+          <li class="nav-item">
+            <a class="nav-link" href="index.php">Inicio</a>
+          </li>
+          <li id="lLogin" class="nav-item">
+            <a class="nav-link" href="?menu=login">Login</a>
+          </li>
+          <li id="lRegistro" class="nav-item">
+            <a class="nav-link" href="?menu=registro">Registro</a>
+          </li>
+
+        </ul>
+      </div>
+          </nav>

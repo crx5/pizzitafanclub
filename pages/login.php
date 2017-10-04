@@ -6,7 +6,7 @@ header('Location: index.php?menu=cuenta');
 }
 ?>
 <div class="pen-title">
-  <h1>Iniciar Sesion</h1>
+  <h2></h2>
 </div>
 <!-- Form Module-->
 <div class="module form-module">
@@ -18,9 +18,9 @@ header('Location: index.php?menu=cuenta');
     <form action="controller/controllerSession.php" method="post">
       <input type="text" placeholder="Usuario" name="user"/>
       <input type="password" placeholder="Contraseña" name="password"/>
-      <button name="entrar">Login</button>
+      <button name="entrar">Inicar Sesion</button>
     </form>
   </div>
 
-  <div class="cta"><a href="#">Forgot your password?</a></div>
+  <div class="cta"><a href="#">Olvido su contraseña?</a></div>
 </div>

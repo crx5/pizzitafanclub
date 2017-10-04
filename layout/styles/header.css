@@ -1,0 +1,12 @@
+#mainNavbar{
+position: fixed;
+background: #252525;
+border-radius: 0;
+border-top: 5px solid;
+border-bottom: none;
+border-right: none;
+border-left: none;
+border-color: #0d47a1;
+padding-top: 5px;
+
+}

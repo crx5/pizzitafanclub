@@ -20,6 +20,6 @@ if ($_GET['menu']=='login') {
 		require_once('pages/cuenta.php');
 	}else {
 
-		require_once('main.php');
+		require_once('pages/main.php');
 	}
 ?>

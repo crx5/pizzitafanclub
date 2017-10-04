@@ -54,8 +54,15 @@ File: Layout CSS
 #pageintro article footer{}
 
 
+	/* seccion contenido
+	--------------------------------------------------------------------------------------------------------------- */
+#SeccionContenido{
+	margin-top: 50px;
+}
+
+
 /* Content Area
---------------------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------------------------------------------
 
 
 /* Content */
@@ -378,7 +385,7 @@ table a, #comments a{background-color:inherit;}
 	#pageintro article div .heading{margin-bottom:30px; font-size:38px;}
 	#pageintro article div p:first-of-type{margin-bottom:20px; font-size:18px;}
 
-	.container, #footer{padding-bottom:50px;}/* Not neccessary - just looks better */
+	.container, #footer{padding-bottom:0px;}/* Not neccessary - just looks better */
 }
 
 
