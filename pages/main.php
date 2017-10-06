@@ -1,11 +1,12 @@
 
-<div id="slider" class="carousel slide" data-ride="carousel">
+
+<div id="slider" class="carousel slide w-100" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#slider" data-slide-to="0" class="active"></li>
     <li data-target="#slider" data-slide-to="1" ></li>
       <li data-target="#slider" data-slide-to="2" ></li>
   </ol>
-  <div clas="carousel-inner">
+  <div clas="carousel-inner w-100">
     <div class="carousel-item active">
       <img class="d-block w-100" src="img/1.jpg" alt="slide1">
     </div>

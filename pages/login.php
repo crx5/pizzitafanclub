@@ -5,6 +5,7 @@ if(isset($_SESSION['user'])){
 header('Location: index.php?menu=cuenta');
 }
 ?>
+
 <div class="pen-title">
   <h2></h2>
 </div>

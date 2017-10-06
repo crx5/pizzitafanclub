@@ -12,18 +12,19 @@ padding-top: 5px;
 
 }
 
-
-
-@media (max-width: 414px){
-  #navbarNav{
-    display: ;
-  }
-
+#toggler{
+  margin-left: auto;
 }
 
+
+
+.navbar-nav{
+  text-align: center;
+}
 @media (min-width: 768px){
   #navbarNav{
-    display: ;
+    display: flex!important;
   }
+
 
 }

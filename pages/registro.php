@@ -4,6 +4,7 @@ if(isset($_SESSION['user'])){
 header('Location: index.php?menu=cuenta');
 }
  ?>
+
 <script src="layout/scripts/jquery.min.js"></script>
 <script src="scripts/parsley.js"></script>
 

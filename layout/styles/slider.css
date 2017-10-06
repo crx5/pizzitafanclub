@@ -1,3 +1,11 @@
 #slider{
   margin-top: 50px;
+
+}
+
+.container{
+  padding: 0px!important;
+  max-width: 100%!important;
+  width: 100%!important;
+  margin: 0px!important;
 }

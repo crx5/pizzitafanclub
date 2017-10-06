@@ -68,6 +68,8 @@ File: Layout CSS
 /* Content */
 .container .content{}
 
+
+
 .cta{}
 .cta article{display:block; position:relative; padding:0 0 0 110px; line-height:normal;}
 .cta article *{margin:0; padding:0;}
@@ -247,7 +249,7 @@ td{border-width:0 1px;}
 
 /* Colours
 --------------------------------------------------------------------------------------------------------------- */
-body{color:#FFFFFF; background-color:#141414;}
+body{color:#FFFFFF; }
 a{color:#A3D044;}
 a:active, a:focus{background:transparent;}/* IE10 + 11 Bugfix - prevents grey background */
 hr, .borderedbox{border-color:#D7D7D7;}
@@ -358,7 +360,7 @@ table a, #comments a{background-color:inherit;}
 
 	#breadcrumb{}
 
-	.container{}
+	.container{ }
 	#comments input[type="reset"]{margin-top:10px;}
 	.pagination li{display:inline-block; margin:0 5px 5px 0;}
 
