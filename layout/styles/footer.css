@@ -1,0 +1,9 @@
+#contenedorRedesS{
+
+  display: table;
+}
+
+.iconRedes{
+  display: table-cell!important;
+  vertical-align: middle;
+}

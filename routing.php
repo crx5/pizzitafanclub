@@ -21,5 +21,6 @@ if ($_GET['menu']=='login') {
 	}else {
 
 		require_once('pages/main.php');
+		require_once('pages/cards.php');
 	}
 ?>

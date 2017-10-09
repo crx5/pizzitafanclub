@@ -11,6 +11,7 @@
 <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 <link href="layout/styles/registro.css" rel="stylesheet" type="text/css" media="all">
 <link rel="stylesheet" href="layout/styles/login.css">
+<link rel="stylesheet" href="layout/styles/cards.css">
 
 
 <script src='https://codepen.io/andytran/pen/vLmRVp.js'></script>
