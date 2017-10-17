@@ -9,8 +9,19 @@ $user = new User();
       $user->setCorreo($_POST['correo']);
       $user->setPassword($_POST['password']);
       $user->setTelefono($_POST['telefono']);
+      $user->setTipo(2);
       $crud->insertar($user);
-      header('Location: ../index.php');
+      header('Location: ../pages/cuenta.php');
+
+  }else if(isset($_POST['insertarAdmin'])) {
+    $user->setCorreo($_POST['correo']);
+    $user->setPassword($_POST['password']);
+    $user->setTelefono($_POST['telefono']);
+    $user->setTipo(1);
+    $crud->insertarAdmin($user);
+    header('Location: ../pages/adminMenu.php');
+
+
 
   }else if (isset($_POST['actualizar'])){
     $user->setPassword($_POST['password']);

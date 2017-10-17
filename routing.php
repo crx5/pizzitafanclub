@@ -17,7 +17,7 @@ if ($_GET['menu']=='login') {
 	} else if ($_GET['menu']=='registro') {
 		require_once('pages/registro.php');
 	} elseif ($_GET['menu']=='cuenta') {
-		require_once('pages/cuenta.php');
+		require_once('pages/adminMenu.php');
 	}else {
 
 		require_once('pages/main.php');

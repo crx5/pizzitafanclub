@@ -9,13 +9,16 @@
         <div class="collapse navbar-collapse  flex-row-reverse" id="navbarNav">
           <ul class="navbar-nav" id="links">
           <li class="nav-item">
-            <a class="nav-link" href="index.php">Inicio</a>
+            <a class="nav-link" ui-sref="inicio">Inicio</a>
           </li>
           <li id="lLogin" class="nav-item">
-            <a class="nav-link" href="?menu=login">Login</a>
+            <a class="nav-link" ui-sref="login">Login</a>
           </li>
           <li id="lRegistro" class="nav-item">
-            <a class="nav-link" href="?menu=registro">Registro</a>
+            <a class="nav-link" ui-sref="registro">Registro</a>
+          </li>
+          <li id="lPizza" class="nav-item">
+            <a class="nav-link" ui-sref="pizzas">Pizzas</a>
           </li>
 
         </ul>

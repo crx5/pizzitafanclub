@@ -8,10 +8,22 @@ require_once('../classes/User.php');
 
     public function insertar ($usuario){
       $db = Db::conectar();
-      $insert=$db->prepare('INSERT INTO usuario values (NULL,:correo,:password,:telefono)');
+      $insert=$db->prepare('INSERT INTO usuario values (NULL,:tipo,:correo,:password,:telefono)');
       $insert->bindValue('correo',$usuario->getCorreo());
       $insert->bindValue('password',$usuario->getPassword());
       $insert->bindValue('telefono',$usuario->getTelefono());
+      $insert->bindValue('tipo',2);
+      $insert->execute();
+
+    }
+
+    public function insertarAdmin ($usuario){
+      $db = Db::conectar();
+      $insert=$db->prepare('INSERT INTO usuario values (NULL,:tipo,:correo,:password,:telefono)');
+      $insert->bindValue('correo',$usuario->getCorreo());
+      $insert->bindValue('password',$usuario->getPassword());
+      $insert->bindValue('telefono',$usuario->getTelefono());
+      $insert->bindValue('tipo',1);
       $insert->execute();
 
     }

@@ -1,0 +1,49 @@
+#cont{
+  background: rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+ margin-left: auto;
+  margin-right: auto;
+  display: flow-root;
+  padding-left: 3px;
+  text-align: left;
+
+
+
+
+}
+#cont:hover{
+
+ background: rgba(0, 0, 0, 0.2);
+}
+
+.card-img-overlay{
+  padding-top: 5.25rem!important;
+  padding-left: 0px!important;
+  padding-right: 0px!important;
+}
+
+.card{
+  display: table!important;
+  max-width: 300px;
+  min-width: 100px;
+
+}
+
+.col-sm-2{
+  margin: 20px!important;
+  min-width: 300px!important;
+
+}
+
+.card-text{
+  display: inline;
+}
+
+.btn{
+  display: inline!important;
+  float: right;
+  padding-top: 0px!important;
+  padding-bottom: 0px!important;
+  margin-left: 3px;
+  margin-right: 3px;
+}

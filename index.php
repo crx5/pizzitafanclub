@@ -12,6 +12,8 @@
 <link href="layout/styles/registro.css" rel="stylesheet" type="text/css" media="all">
 <link rel="stylesheet" href="layout/styles/login.css">
 <link rel="stylesheet" href="layout/styles/cards.css">
+<link rel="stylesheet" href="layout/stles/adminMenu.css">
+<link rel="stylesheet" href="layout/styles/pizzas.css">
 
 
 <script src='https://codepen.io/andytran/pen/vLmRVp.js'></script>
@@ -19,10 +21,16 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
 <script src="layout/scripts/jquery.min.js"></script>
-<script src="scripts/hLinks.js"></script>
+
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+
 <script  src="scripts/login.js"></script>
+<script src="scripts/adminMenu.js"></script>
+<script src="scripts/routing.js"></script>
+<script src="scripts/hLinks.js"></script>
 
 
 <?php
@@ -32,7 +40,11 @@ ob_start();
 
 
 
+
 <?php
+
 require_once('layout/layout.php');
+
+
 ob_end_flush();
 ?>

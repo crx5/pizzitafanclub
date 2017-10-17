@@ -1,5 +1,12 @@
 
-
+<?php
+session_start();
+if($_SESSION['user']){
+echo "<script type='text/javascript'> hideLinks();</script>";
+} else {
+  echo "<script type='text/javascript'> showLinks();</script>";
+}
+?>
 <div id="slider" class="carousel slide w-100" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#slider" data-slide-to="0" class="active"></li>
@@ -27,3 +34,8 @@
     </a>
 
   </div>
+
+  <?php
+
+  require_once('cards.php');
+   ?>

@@ -26,8 +26,14 @@ if(isset($_POST['registrarse'])){
 
   $user->setTelefono($_POST['telefono']);
     if($crud->buscarUser($_POST['correo'])){
-      $crud->insertar($user);
-      header('Location: ../index.php');
+      //if($user->getTipo == 2){
+        $crud->insertar($user);
+        header('Location: ../#!/cuenta');
+      //}else{
+        //$crud->insertarAdmin($user);
+
+
+
     }else {
       header('Location: ../pages/error.php?mensaje=Su correo ya esta registrado');
     }
@@ -38,8 +44,12 @@ if(isset($_POST['registrarse'])){
   // si el id no es nulo entonces encontro algo
     if($user->getId()!=null){
         $_SESSION['user']=$user;
-        
-       header('Location: ../index.php?menu=cuenta');
+          if($user->getTipo ==2){
+              header('Location: ../#!/cuenta');
+          }else{
+                header('Location: ../#!/admin');
+          }
+
         //require_once('pages/cuenta.php');
 
 
