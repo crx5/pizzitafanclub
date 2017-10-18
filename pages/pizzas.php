@@ -13,8 +13,9 @@ for($i =0;$i<count($array);$i++){
   $precio = $array[$i][1];
   $descripcion = $array[$i][2];
   $url = $array[$i][3];
+  $cont = $cont++;
 
-  echo "<script type='text/javascript'> generar('$nombre','$precio','$descripcion','$url');</script>";
+  echo "<script type='text/javascript'> generar('$nombre','$precio','$descripcion','$url','$i');</script>";
 
 }
 

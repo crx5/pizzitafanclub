@@ -16,6 +16,37 @@
  background: rgba(0, 0, 0, 0.2);
 }
 
+.btnCerrar{
+ width: 20px;
+ height: 20px;
+ background: blue;
+ position: absolute;
+ top: 5;
+ right: 5;
+ cursor: pointer;
+}
+
+.divText{
+
+width: 80%;
+position: relative;
+text-align: left;
+padding-left: 5px;
+overflow: auto;
+height: 80%;
+}
+.txtDescripcion{
+  position: absolute!important;
+  width: 255px!important;
+  height: 120px;
+  background: rgba(0, 0, 0, 0.9)!important;
+  left: 5px;
+  top: 5px;
+  bottom: 5px;
+  right: 5px;
+
+}
+
 .card-img-overlay{
   padding-top: 5.25rem!important;
   padding-left: 0px!important;

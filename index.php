@@ -31,6 +31,7 @@
 <script src="scripts/adminMenu.js"></script>
 <script src="scripts/routing.js"></script>
 <script src="scripts/hLinks.js"></script>
+<script src="scripts/pizzaGen.js"></script>
 
 
 <?php
